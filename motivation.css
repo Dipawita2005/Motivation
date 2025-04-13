@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aqua;
+}
+
+.wrapper{
+    background-color: white;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px black;
+    
+}
+
+.head{
+    font-size: 35px;
+    margin-bottom: 40px;
+    font-family: "Philosopher", sans-serif;
+}
+
+
+.head::after{
+    content: '';
+    width: 160px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: black;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+blockquote{
+    font-family: "Mulish", sans-serif;
+    font-size: 26px;
+    margin: 25px 0px;
+    height: 60px;
+}
+
+blockquote::before,blockquote::after{
+    content: '"';
+}
+
+.author{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+    font-weight: bold;
+    font-family: "Mulish", sans-serif;
+}
+
+.author::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    /* border-radius: 3px; */
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+
+.buttons{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    font-family: "Philosopher", sans-serif;
+}
+
+
+.buttons button{
+    background-color:bisque;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 120px;
+    height: 60px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    border: 1px solid black;
+}
+
+.buttons button i{
+    margin-right: 3px;
+    font-size: 20px;
+}
